@@ -104,12 +104,14 @@ const PrepsWorkspace = () => {
           {/* Left Panel - Project Navigator */}
           <ResizablePanel defaultSize={20} minSize={15} maxSize={30}>
             <ProjectNavigator 
-              jobs={mockData.jobs}
-              templates={mockData.templates}
+              jobs={jobs}
+              templates={templates}
               selectedTemplate={selectedTemplate}
               setSelectedTemplate={setSelectedTemplate}
               selectedJob={selectedJob}
               setSelectedJob={setSelectedJob}
+              onCreateJob={handleCreateJob}
+              onCreateTemplate={handleCreateTemplate}
             />
           </ResizablePanel>
           
