@@ -23,7 +23,9 @@ const ProjectNavigator = ({
   selectedTemplate, 
   setSelectedTemplate, 
   selectedJob, 
-  setSelectedJob 
+  setSelectedJob,
+  onCreateJob,
+  onCreateTemplate
 }) => {
   const [expandedJobs, setExpandedJobs] = useState(new Set());
   const [searchTerm, setSearchTerm] = useState('');
