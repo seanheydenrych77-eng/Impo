@@ -33,6 +33,8 @@ import PreviewArea from './PreviewArea';
 import { mockData } from '../data/mockData';
 
 const PrepsWorkspace = () => {
+  const [jobs, setJobs] = useState(mockData.jobs);
+  const [templates, setTemplates] = useState(mockData.templates);
   const [selectedTemplate, setSelectedTemplate] = useState(mockData.templates[0]);
   const [selectedJob, setSelectedJob] = useState(null);
   const [zoomLevel, setZoomLevel] = useState(100);
