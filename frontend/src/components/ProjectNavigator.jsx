@@ -11,8 +11,11 @@ import {
   Plus, 
   Search,
   ChevronRight,
-  ChevronDown
+  ChevronDown,
+  Library
 } from 'lucide-react';
+import NewJobDialog from './NewJobDialog';
+import TemplateLibrary from './TemplateLibrary';
 
 const ProjectNavigator = ({ 
   jobs, 
