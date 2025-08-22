@@ -49,6 +49,16 @@ const PrepsWorkspace = () => {
     setZoomLevel(prev => Math.max(prev - 10, 25));
   };
 
+  const handleCreateJob = (newJob) => {
+    setJobs(prev => [...prev, newJob]);
+    setSelectedJob(newJob);
+  };
+
+  const handleCreateTemplate = () => {
+    // TODO: Implement template creation dialog
+    console.log('Create new template');
+  };
+
   return (
     <div className="h-screen flex flex-col bg-gray-50">
       {/* Main Menu Bar */}
