@@ -75,11 +75,13 @@ const ProjectNavigator = ({
         <TabsContent value="jobs" className="flex-1 mt-0">
           <ScrollArea className="h-full">
             <div className="p-2">
-              <div className="mb-2">
-                <Button variant="ghost" size="sm" className="w-full justify-start">
-                  <Plus className="w-3 h-3 mr-2" />
-                  New Job
-                </Button>
+              <div className="mb-2 space-y-1">
+                <NewJobDialog onCreateJob={onCreateJob} />
+                <TemplateLibrary 
+                  templates={templates}
+                  onSelectTemplate={setSelectedTemplate}
+                  onCreateTemplate={onCreateTemplate}
+                />
               </div>
               
               {filteredJobs.map((job) => (
